@@ -8,7 +8,7 @@ Student batch 39
 **Date:** Saturday, 06 September 2025  
 **Time:** 12:58 PM IST  
 **Platform:** Zoom  
-**Facilitator:** Parvez Mustak  
+**Student:** Parvez Mustak  
 
 ---
 
@@ -47,7 +47,8 @@ Student batch 39
 - Created IAM user and group for Terraform
 - Attached policy for programmatic access
 - Generated access keys for authentication
-- Configured AWS CLI with credentials
+- Configured AWS CLI with credentials ▸ Used AMI image and named it Devmachine
+- Validated Terraform configuration ▸ Used terraform validate to check syntax and logical consistency ▸ Optional: used JSON output for CI/CD integration
 
 ---
 
