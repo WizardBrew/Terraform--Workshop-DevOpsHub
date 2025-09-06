@@ -86,6 +86,57 @@ y the <!DOCTYPE html>
       </ol>
     </section>
 
+	   <section class="step">
+      <h2>✅ Commands And process</h2>
+      <ul>
+        <li>Download the Repo from cloud using https://github.com/WizardBrew/terraformcode</li>
+        <li>open Git Bash or CMD </li>
+        <li> <li>step 1: terraform init </li>
+        <ul>    <li>Initializes the working directory </li>
+                <li>Downloads provider plugins & Sets up backend configuration<br>  </li>
+                <li>Prepares .terraform folder if first-time setup or after changing providers/backends
+									<br>& lockes the .teraform file (no changes can be made)  </li>    </ul>
+        </li> 
+
+        <ul>
+        
+        <li> <li>step 2: terraform Plan </li>
+        <ul>    <li>Creates an execution plan (dry run) </li>
+                <li>Reads current state<br>- Compares with desired state in .tf files<br>  </li>
+                <li>Shows proposed changes	Before applying changes to preview impact</li>    </ul>
+        </li> 
+      </ul>
+
+		   <ul>
+        
+        <li> <li>step 3: terraform apply </li>
+        <ul>    <li>Applies the changes to infrastructure </li>
+                <li>Executes the plan, & - Provisions resources, then - Updates state file  </li>
+                <li>When you're ready to make changes live</li>    </ul>
+        </li> 
+
+			<li> <li>step 4: terraform Validate </li>
+        <ul>    <li>Verifies that your .tf files follow proper HCL (HashiCorp Configuration Language) syntax </li>
+				<li>Runs in the current working directory and checks all loaded modules</li>
+                <li>But Does not connect to cloud providers or check actual resource existence  </li>
+                </ul>
+        </li> 
+
+			<li> <li>step 5: terraform destroy </li>
+        <ul>    <li>Destroys all resources defined in your Terraform configuration </li>
+				<li>Everything tracked in the current state file (e.g., VMs, databases, networks)</li>
+                <li>Updates the state file to reflect that resources no longer exist (Note to undo re run terraform apply and recreate all)  </li>
+                </ul>
+        </li>
+			   
+			   
+      </ul>
+
+
+
+		  
+    </section>
+
     <section class="step">
       <h2>✅ Action Items</h2>
       <ul>
@@ -96,24 +147,7 @@ y the <!DOCTYPE html>
       </ul>
     </section>
 
-     <section class="step">
-      <h2>✅ Action Items</h2>
-      <ul>
-        <li>Download the Repo from cloud using https://github.com/WizardBrew/terraformcode</li>
-        <li>open Git Bash or CMD </li>
-        <li> <li>step 1: terraform init </li>
-        <ul>    <li>Initializes the working directory </li>
-                <li>Downloads provider plugins<br>- Sets up backend configuration<br>  </li>
-                <li>Prepares .terraform folder    -/-	First time setup or after changing providers/backends
-									 & lockes the .teraform file (no changes can be made)  </li>
-          
-        </ul>
-        </li> 
-      
-      
-        <li>verify the installation in cmd </li>
-      </ul>
-    </section>
+    
   </main>
 
   <footer>
