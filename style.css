@@ -1,0 +1,75 @@
+/* WizardBrew Universal Style Template — Expanded Layout */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: linear-gradient(135deg, #ffccbc, #ffe0b2, #f8bbd0, #d1c4e9);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px 20px;
+}
+
+header h1 {
+  margin-top: 15px;
+  font-size: 2rem;
+  color: #6a1b9a;
+  text-shadow: 1px 1px 2px rgba(255,255,255,0.6);
+}
+
+main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h2 {
+  color: #0078d4;
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+a {
+  color: #0288d1;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.step {
+  background: linear-gradient(to bottom right, #ffffff, #f3e5f5);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(to right, #ce93d8, #f48fb1);
+  color: white;
+}
