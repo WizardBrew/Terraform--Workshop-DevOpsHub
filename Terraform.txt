@@ -1,0 +1,57 @@
+Terraform 
+
+Guide: - https://wizardbrew.github.io/Terraform--Workshop-DevOpsHub/
+
+user - terraform	==> Dummy details
+pass- tera@207867**
+Access key - AKIA3---------6BWD2U
+Sec key -  UmRZvfv----====-----hAx0df8obYux
+
+
+Step 1 ==> download teraform binary file and save in folder.
+step 2 ==> open cmd using folder and type terraform -v    save in bin folder and mark env variable
+step 3 ==> download aws cli and install     verify typing aws in cmd
+step 4 ==>  Create Aws User and create access key    
+step 5 ==> open cmd ==> aws configure and add keys in local 
+step 6 ==> use the terraform repo in gitbash
+
+step 7: download repo and use the commands as mentioned below
+	- terraform init
+	- terraform plan
+	- terraform apply
+
+for complete guide visit https://wizardbrew.github.io/Terraform--Workshop-DevOpsHub/
+
+
+
+
+
+Commands==> 
+terraform -v  		==> to check Version
+terraform init		==> Initializes the working directory
+									Downloads provider plugins<br>- Sets up backend configuration<br> 
+									- Prepares .terraform folder    -/-	First time setup or after changing providers/backends
+									 & lockes the .teraform file (no chnages can be made)
+
+
+terraform plan		==> Creates an execution plan (dry run)
+									- Reads current state<br>- Compares with desired state in .tf files<br>
+									- Shows proposed changes	Before applying changes to preview impact
+									  
+									
+terraform apply   ==> 	Applies the changes to infrastructure	
+									- Executes the plan<br>- Provisions resources<br>- Updates state file
+									 When you're ready to make changes live
+									 
+terraform destroy ==>  It will distroy the file and config state file which changes were made.
+									 
+									 
+									 
+							
+						
+Demo practical : aws configure   ==> output on cmd
+C:\Users\Wizard>aws configure
+AWS Access Key ID [****************WD2U]: AKIA3---------6BWD2U
+AWS Secret Access Key [****************bYux]: UmRZvfv----====-----hAx0df8obYux
+Default region name [None]:
+Default output format [None]:
