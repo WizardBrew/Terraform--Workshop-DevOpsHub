@@ -1,16 +1,3 @@
-# Terraform--Workshop-DevOpsHub
-Student batch 39
-
-
-# 📅 Zoom Meeting Agenda
-
-**Topic:** Terraform & AWS CLI Integration  
-**Date:** Saturday, 06 September 2025  
-**Time:** 12:58 PM IST  
-**Platform:** Zoom  
-**Student:** Parvez Mustak  
-
----
 
 ## 🧭 Key Discussion Points
 
