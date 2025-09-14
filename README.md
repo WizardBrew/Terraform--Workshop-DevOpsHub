@@ -1,6 +1,7 @@
 
 ## 🧭 Key Discussion Points
 
+- link: https://wizardbrew.github.io/Terraform--Workshop-DevOpsHub/
 ### 1. 🌍 Terraform Introduction
 - Overview of Terraform and its role in Infrastructure as Code (IaC)
 
