@@ -49,6 +49,17 @@
 
 ---
 
+Command	Explanation
+terraform init	Initializes working directory, downloads providers/modules. Run first in any new project.
+terraform plan	Previews changes without applying. Safe way to check infra updates.
+terraform plan -out=plan.tfplan	Saves plan to file for later apply.
+terraform apply	Applies changes interactively.
+terraform apply -auto-approve	Applies without confirmation (CI/CD use).
+terraform destroy	Destroys all managed infra. Use carefully.
+terraform destroy -target=aws_instance.web	Destroys only a specific resource.
+
+----
+
 ## 📎 Resources
 
 - [Terraform Docs](https://developer.hashicorp.com/terraform/docs)
