@@ -134,6 +134,85 @@
 		  
     </section>
 
+ <section class="step">
+      <h2>🚀 Workflow Commands</h2>
+      <table>
+        <tr><th>Command</th><th>Explanation</th></tr>
+        <tr><td>terraform init</td><td>Initializes working directory, downloads providers/modules.</td></tr>
+        <tr><td>terraform plan</td><td>Previews changes without applying.</td></tr>
+        <tr><td>terraform plan -out=plan.tfplan</td><td>Saves plan to file for later apply.</td></tr>
+        <tr><td>terraform apply</td><td>Applies changes interactively.</td></tr>
+        <tr><td>terraform apply -auto-approve</td><td>Applies without confirmation (CI/CD use).</td></tr>
+        <tr><td>terraform destroy</td><td>Destroys all managed infra. Use carefully.</td></tr>
+        <tr><td>terraform destroy -target=aws_instance.web</td><td>Destroys only a specific resource.</td></tr>
+      </table>
+    </section>
+
+    <section class="step">
+      <h2>🛠 Validation & Formatting</h2>
+      <table>
+        <tr><th>Command</th><th>Explanation</th></tr>
+        <tr><td>terraform validate</td><td>Checks `.tf` files for syntax/config errors.</td></tr>
+        <tr><td>terraform fmt</td><td>Formats `.tf` files into canonical HCL style.</td></tr>
+        <tr><td>terraform fmt -check</td><td>Checks formatting only (CI-friendly).</td></tr>
+        <tr><td>terraform fmt -recursive</td><td>Formats files in subdirectories too.</td></tr>
+      </table>
+    </section>
+
+    <section class="step">
+      <h2>📦 State Management</h2>
+      <table>
+        <tr><th>Command</th><th>Explanation</th></tr>
+        <tr><td>terraform state list</td><td>Lists all resources tracked in state.</td></tr>
+        <tr><td>terraform state show &lt;resource&gt;</td><td>Shows attributes of a resource.</td></tr>
+        <tr><td>terraform state mv &lt;src&gt; &lt;dst&gt;</td><td>Moves/renames resource in state.</td></tr>
+        <tr><td>terraform state rm &lt;resource&gt;</td><td>Removes resource from state (infra stays).</td></tr>
+        <tr><td>terraform state pull</td><td>Downloads remote state as JSON.</td></tr>
+        <tr><td>terraform state push &lt;file&gt;</td><td>Uploads local state file to backend.</td></tr>
+        <tr><td>terraform import &lt;resource&gt; &lt;id&gt;</td><td>Imports existing infra into state.</td></tr>
+        <tr><td>terraform force-unlock &lt;lock-id&gt;</td><td>Releases a stuck state lock.</td></tr>
+      </table>
+    </section>
+
+    <section class="step">
+      <h2>🌍 Workspaces</h2>
+      <table>
+        <tr><th>Command</th><th>Explanation</th></tr>
+        <tr><td>terraform workspace list</td><td>Lists all workspaces (dev, staging, prod).</td></tr>
+        <tr><td>terraform workspace show</td><td>Shows current workspace.</td></tr>
+        <tr><td>terraform workspace new &lt;name&gt;</td><td>Creates new workspace for environment separation.</td></tr>
+        <tr><td>terraform workspace select &lt;name&gt;</td><td>Switches workspace.</td></tr>
+        <tr><td>terraform workspace delete &lt;name&gt;</td><td>Deletes a workspace (not current).</td></tr>
+      </table>
+    </section>
+
+    <section class="step">
+      <h2>🔍 Inspection & Debugging</h2>
+      <table>
+        <tr><th>Command</th><th>Explanation</th></tr>
+        <tr><td>terraform show</td><td>Displays current state or saved plan.</td></tr>
+        <tr><td>terraform show plan.tfplan</td><td>Shows saved plan file.</td></tr>
+        <tr><td>terraform output</td><td>Lists all output values.</td></tr>
+        <tr><td>terraform output -json</td><td>Outputs values as JSON.</td></tr>
+        <tr><td>terraform graph | dot -Tpng &gt; graph.png</td><td>Generates dependency graph.</td></tr>
+        <tr><td>terraform providers</td><td>Lists required providers.</td></tr>
+        <tr><td>terraform version</td><td>Shows installed version.</td></tr>
+      </table>
+    </section>
+
+    <section class="step">
+      <h2>⚠️ Best Practices</h2>
+      <ul class="agenda-list">
+        <li>Always run <code>terraform plan</code> before <code>apply</code>.</li>
+        <li>Use workspaces for environment separation.</li>
+        <li>Keep state files secure (they contain secrets).</li>
+        <li>Use remote backends (S3, Azure Blob, GCS) for collaboration.</li>
+        <li>Apply <code>terraform fmt</code> &amp; <code>terraform validate</code> in CI/CD pipelines.</li>
+      </ul>
+    </section>
+
+	  
+	  
     <section class="step">
       <h2>✅ Action Items</h2>
       <ul>
