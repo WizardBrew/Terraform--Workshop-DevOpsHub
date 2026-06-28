@@ -86,12 +86,4 @@ footer {
   text-align: center;
   padding: 20px;
   background: linear-gradient(to right, #ce93d8, #f48fb1);
-  color: white;
-}
-
-
-@media (max-width: 600px) {
-  .profile-action-container {
-    flex-direction: column;
-  }
-}
+  color: white
